@@ -1,0 +1,1191 @@
+{
+  "version": null,
+  "config": {
+    "development": {},
+    "production": {},
+    "base": {
+      ".editorconfig": {
+        "name": ".editorconfig",
+        "path": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/.editorconfig",
+        "module": {}
+      },
+      "bud.config.js": {
+        "name": "bud.config.js",
+        "path": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/bud.config.js"
+      },
+      "tailwind.config.js": {
+        "name": "tailwind.config.js",
+        "path": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/tailwind.config.js",
+        "module": {
+          "content": [
+            "./app/**/*.php",
+            "./resources/**/*.{php,vue,js}"
+          ],
+          "theme": {
+            "extend": {
+              "colors": {
+                "rojo": "#FE5E35"
+              },
+              "fontSize": {
+                "tel-titulares": [
+                  "26px",
+                  "36px"
+                ],
+                "tel-texto": [
+                  "16px",
+                  "22px"
+                ],
+                "tel-pie": [
+                  "12px",
+                  "15px"
+                ],
+                "pad-titulares": [
+                  "28px",
+                  "34px"
+                ],
+                "pad-texto": [
+                  "18px",
+                  "25px"
+                ],
+                "pad-pie": [
+                  "12px",
+                  "14px"
+                ],
+                "1280-titulares": [
+                  "32px",
+                  "38px"
+                ],
+                "1280-texto": [
+                  "20px",
+                  "28px"
+                ],
+                "1280-pie": [
+                  "14px",
+                  "16px"
+                ],
+                "titulares": [
+                  "36px",
+                  "42px"
+                ],
+                "texto": [
+                  "24px",
+                  "32px"
+                ],
+                "pie": [
+                  "15px",
+                  "18px"
+                ],
+                "1920-titulares": [
+                  "42px",
+                  "54px"
+                ],
+                "1920-texto": [
+                  "28px",
+                  "38px"
+                ],
+                "1920-pie": [
+                  "18px",
+                  "22px"
+                ]
+              },
+              "screens": {
+                "2xl": "1440px",
+                "3xl": "1920px"
+              }
+            }
+          },
+          "plugins": [],
+          "default": {
+            "content": [
+              "./app/**/*.php",
+              "./resources/**/*.{php,vue,js}"
+            ],
+            "theme": {
+              "extend": {
+                "colors": {
+                  "rojo": "#FE5E35"
+                },
+                "fontSize": {
+                  "tel-titulares": [
+                    "26px",
+                    "36px"
+                  ],
+                  "tel-texto": [
+                    "16px",
+                    "22px"
+                  ],
+                  "tel-pie": [
+                    "12px",
+                    "15px"
+                  ],
+                  "pad-titulares": [
+                    "28px",
+                    "34px"
+                  ],
+                  "pad-texto": [
+                    "18px",
+                    "25px"
+                  ],
+                  "pad-pie": [
+                    "12px",
+                    "14px"
+                  ],
+                  "1280-titulares": [
+                    "32px",
+                    "38px"
+                  ],
+                  "1280-texto": [
+                    "20px",
+                    "28px"
+                  ],
+                  "1280-pie": [
+                    "14px",
+                    "16px"
+                  ],
+                  "titulares": [
+                    "36px",
+                    "42px"
+                  ],
+                  "texto": [
+                    "24px",
+                    "32px"
+                  ],
+                  "pie": [
+                    "15px",
+                    "18px"
+                  ],
+                  "1920-titulares": [
+                    "42px",
+                    "54px"
+                  ],
+                  "1920-texto": [
+                    "28px",
+                    "38px"
+                  ],
+                  "1920-pie": [
+                    "18px",
+                    "22px"
+                  ]
+                },
+                "screens": {
+                  "2xl": "1440px",
+                  "3xl": "1920px"
+                }
+              }
+            },
+            "plugins": []
+          }
+        }
+      },
+      "package.json": {
+        "name": "package.json",
+        "path": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/package.json",
+        "module": {
+          "name": "sage",
+          "private": true,
+          "browserslist": [
+            "extends @wordpress/browserslist-config"
+          ],
+          "engines": {
+            "node": ">=16.0.0"
+          },
+          "scripts": {
+            "dev": "bud dev",
+            "build": "bud build",
+            "translate": "npm run translate:pot && npm run translate:js",
+            "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --ignore-domain --include=\"app,resources\"",
+            "translate:js": "wp i18n make-json ./resources/lang --pretty-print"
+          },
+          "devDependencies": {
+            "@roots/bud": "5.7.6",
+            "@roots/bud-postcss": "^5.7.7",
+            "@roots/bud-sass": "^5.7.7",
+            "@roots/bud-tailwindcss": "5.7.6",
+            "@roots/sage": "5.7.6"
+          },
+          "dependencies": {
+            "@alpinejs/collapse": "^3.9.6",
+            "alpinejs": "^3.9.6",
+            "swiper": "^8.1.0"
+          }
+        }
+      },
+      "composer.json": {
+        "name": "composer.json",
+        "path": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/composer.json",
+        "module": {
+          "name": "roots/sage",
+          "type": "wordpress-theme",
+          "license": "MIT",
+          "description": "WordPress starter theme with a modern development workflow",
+          "homepage": "https://roots.io/sage/",
+          "authors": [
+            {
+              "name": "Ben Word",
+              "email": "ben@benword.com",
+              "homepage": "https://github.com/retlehs"
+            },
+            {
+              "name": "Scott Walkinshaw",
+              "email": "scott.walkinshaw@gmail.com",
+              "homepage": "https://github.com/swalkinshaw"
+            },
+            {
+              "name": "QWp6t",
+              "email": "hi@qwp6t.me",
+              "homepage": "https://github.com/qwp6t"
+            },
+            {
+              "name": "Brandon Nifong",
+              "email": "brandon@tendency.me",
+              "homepage": "https://github.com/log1x"
+            }
+          ],
+          "keywords": [
+            "wordpress"
+          ],
+          "support": {
+            "issues": "https://github.com/roots/sage/issues",
+            "forum": "https://discourse.roots.io/"
+          },
+          "autoload": {
+            "psr-4": {
+              "App\\": "app/"
+            }
+          },
+          "require": {
+            "php": "^7.4|^8.0",
+            "log1x/sage-directives": "^1.1",
+            "log1x/sage-svg": "^1.1",
+            "roots/acorn": "^2.0"
+          },
+          "require-dev": {
+            "squizlabs/php_codesniffer": "^3.6"
+          },
+          "suggest": {
+            "log1x/sage-directives": "A collection of useful Blade directives for WordPress and Sage (^1.0).",
+            "log1x/sage-svg": "A useful SVG directive for inlining SVG's within Blade views (^1.0)."
+          },
+          "config": {
+            "optimize-autoloader": true,
+            "preferred-install": "dist",
+            "sort-packages": true
+          },
+          "minimum-stability": "dev",
+          "prefer-stable": true,
+          "scripts": {
+            "lint": [
+              "phpcs --extensions=php --standard=PSR12 app"
+            ]
+          },
+          "extra": {
+            "acorn": {
+              "providers": [
+                "App\\Providers\\ThemeServiceProvider"
+              ]
+            }
+          }
+        }
+      },
+      "jsconfig.json": {
+        "name": "jsconfig.json",
+        "path": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/jsconfig.json",
+        "module": {
+          "compilerOptions": {
+            "allowSyntheticDefaultImports": true,
+            "jsx": "preserve",
+            "lib": [
+              "dom",
+              "dom.iterable",
+              "esnext"
+            ],
+            "module": "commonjs",
+            "moduleResolution": "node",
+            "paths": {
+              "@scripts/*": [
+                "./resources/scripts/*"
+              ],
+              "@styles/*": [
+                "./resources/styles/*"
+              ]
+            }
+          },
+          "exclude": [
+            "./public",
+            "./node_modules"
+          ]
+        }
+      },
+      "theme.json": {
+        "name": "theme.json",
+        "path": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/theme.json",
+        "module": {
+          "$schema": "https://schemas.wp.org/trunk/theme.json",
+          "version": 2,
+          "settings": {
+            "color": {
+              "palette": [
+                {
+                  "slug": "primary",
+                  "color": "#525ddc",
+                  "name": "Primary"
+                }
+              ],
+              "custom": false,
+              "customGradient": false,
+              "defaultPalette": false,
+              "defaultGradients": false
+            },
+            "custom": {
+              "spacing": {},
+              "typography": {
+                "font-size": {},
+                "line-height": {}
+              }
+            },
+            "spacing": {
+              "padding": true,
+              "units": [
+                "px",
+                "%",
+                "em",
+                "rem",
+                "vw",
+                "vh"
+              ]
+            },
+            "typography": {
+              "customFontSize": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "manifest": {
+    "name": "sage",
+    "private": true,
+    "browserslist": [
+      "extends @wordpress/browserslist-config"
+    ],
+    "engines": {
+      "node": ">=16.0.0"
+    },
+    "scripts": {
+      "dev": "bud dev",
+      "build": "bud build",
+      "translate": "npm run translate:pot && npm run translate:js",
+      "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --ignore-domain --include=\"app,resources\"",
+      "translate:js": "wp i18n make-json ./resources/lang --pretty-print"
+    },
+    "devDependencies": {
+      "@roots/bud": "5.7.6",
+      "@roots/bud-postcss": "^5.7.7",
+      "@roots/bud-sass": "^5.7.7",
+      "@roots/bud-tailwindcss": "5.7.6",
+      "@roots/sage": "5.7.6"
+    },
+    "dependencies": {
+      "@alpinejs/collapse": "^3.9.6",
+      "alpinejs": "^3.9.6",
+      "swiper": "^8.1.0"
+    }
+  },
+  "installed": {
+    "@roots/bud": "5.7.6",
+    "@roots/bud-postcss": "^5.7.7",
+    "@roots/bud-sass": "^5.7.7",
+    "@roots/bud-tailwindcss": "5.7.6",
+    "@roots/sage": "5.7.6",
+    "@alpinejs/collapse": "^3.9.6",
+    "alpinejs": "^3.9.6",
+    "swiper": "^8.1.0"
+  },
+  "context": {
+    "name": "bud",
+    "cwd": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme",
+    "projectDir": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme",
+    "manifest": {
+      "name": "sage",
+      "private": true,
+      "browserslist": [
+        "extends @wordpress/browserslist-config"
+      ],
+      "engines": {
+        "node": ">=16.0.0"
+      },
+      "scripts": {
+        "dev": "bud dev",
+        "build": "bud build",
+        "translate": "npm run translate:pot && npm run translate:js",
+        "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --ignore-domain --include=\"app,resources\"",
+        "translate:js": "wp i18n make-json ./resources/lang --pretty-print"
+      },
+      "devDependencies": {
+        "@roots/bud": "5.7.6",
+        "@roots/bud-postcss": "^5.7.7",
+        "@roots/bud-sass": "^5.7.7",
+        "@roots/bud-tailwindcss": "5.7.6",
+        "@roots/sage": "5.7.6"
+      },
+      "dependencies": {
+        "@alpinejs/collapse": "^3.9.6",
+        "alpinejs": "^3.9.6",
+        "swiper": "^8.1.0"
+      }
+    },
+    "disk": {
+      "projectDir": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme",
+      "config": {
+        "package.json": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/package.json",
+        ".editorconfig": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/.editorconfig",
+        "bud.config.js": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/bud.config.js",
+        "composer.json": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/composer.json",
+        "jsconfig.json": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/jsconfig.json",
+        "tailwind.config.js": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/tailwind.config.js",
+        "theme.json": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/theme.json"
+      }
+    },
+    "application": {
+      "dir": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/node_modules/@roots/bud",
+      "name": "@roots/bud",
+      "version": "5.7.6",
+      "description": "Frontend build tools combining the best parts of Symfony Encore and Laravel Mix",
+      "homepage": "https://roots.io/bud",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/roots/bud.git",
+        "directory": "sources/@roots/bud"
+      },
+      "contributors": [
+        {
+          "name": "kellymears",
+          "url": "https://github.com/kellymears"
+        },
+        {
+          "name": "QWp6t",
+          "url": "https://github.com/QWp6t"
+        },
+        {
+          "name": "clayrisser",
+          "url": "https://github.com/clayrisser"
+        }
+      ],
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/roots/bud/issues"
+      },
+      "funding": {
+        "type": "github sponsors",
+        "url": "https://github.com/sponsors/roots"
+      },
+      "keywords": [
+        "bud",
+        "roots",
+        "webpack"
+      ],
+      "engines": {
+        "node": ">=14"
+      },
+      "bin": "./bin/bud.js",
+      "files": [
+        "assets/",
+        "bin/",
+        "lib/",
+        "types/",
+        "vendor/"
+      ],
+      "main": "./lib/cjs/index.js",
+      "module": "./lib/esm/index.js",
+      "exports": {
+        ".": {
+          "require": "./lib/cjs/index.js",
+          "import": "./lib/esm/index.js"
+        }
+      },
+      "types": "./types/index.d.ts",
+      "devDependencies": {
+        "@skypack/package-check": "0.2.2",
+        "@types/braces": "3.0.1",
+        "@types/fs-extra": "9.0.13",
+        "@types/lodash": "4.14.180",
+        "@types/mini-css-extract-plugin": "2.5.0",
+        "@types/node": "16.11.26",
+        "@types/node-notifier": "8.0.2"
+      },
+      "dependencies": {
+        "@roots/bud-api": "5.7.6",
+        "@roots/bud-build": "5.7.6",
+        "@roots/bud-cache": "5.7.6",
+        "@roots/bud-compiler": "5.7.6",
+        "@roots/bud-dashboard": "5.7.6",
+        "@roots/bud-extensions": "5.7.6",
+        "@roots/bud-framework": "5.7.6",
+        "@roots/bud-hooks": "5.7.6",
+        "@roots/bud-server": "5.7.6",
+        "@roots/bud-support": "5.7.6",
+        "@roots/container": "5.7.6",
+        "@roots/dependencies": "5.7.6",
+        "clean-webpack-plugin": "^4.0.0",
+        "clipanion": "3.2.0-rc.10",
+        "copy-webpack-plugin": "^10.0.0",
+        "html-webpack-plugin": "^5.5.0",
+        "mini-css-extract-plugin": "^2.4.5",
+        "node-notifier": "10.0.1",
+        "schema-utils": "4.0.0",
+        "tslib": "^2.3.1",
+        "typanion": "3.7.1",
+        "type-fest": "^2.5.4",
+        "webpack": "5.70.0",
+        "webpack-cli": "^4.9.1",
+        "webpack-manifest-plugin": "^5.0.0"
+      }
+    },
+    "env": {
+      "MANPATH": "/Users/pope/.nvm/versions/node/v16.13.2/share/man:/Users/pope/.npm-packages/share/man:/usr/local/share/man:/usr/share/man:/Users/pope/.rvm/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man",
+      "TERM_PROGRAM": "vscode",
+      "rvm_bin_path": "/Users/pope/.rvm/bin",
+      "NODE": "/Users/pope/.nvm/versions/node/v16.13.2/bin/node",
+      "INIT_CWD": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme",
+      "NVM_CD_FLAGS": "",
+      "npm_config_version_git_tag": "true",
+      "SHELL": "/bin/bash",
+      "TERM": "xterm-256color",
+      "npm_config__bit_registry": "https://node.bit.dev",
+      "TMPDIR": "/var/folders/04/shr__7wx1cb5lp950jg8g10r0000gn/T/",
+      "npm_package_scripts_translate": "npm run translate:pot && npm run translate:js",
+      "Apple_PubSub_Socket_Render": "/private/tmp/com.apple.launchd.sk16xMxJNN/Render",
+      "npm_config_init_license": "MIT",
+      "TERM_PROGRAM_VERSION": "1.66.2",
+      "npm_package_scripts_dev": "bud dev",
+      "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+      "npm_package_scripts_translate_js": "wp i18n make-json ./resources/lang --pretty-print",
+      "npm_package_private": "true",
+      "npm_config_registry": "https://registry.yarnpkg.com",
+      "npm_package_readmeFilename": "README.md",
+      "USER": "popedub",
+      "NVM_DIR": "/Users/pope/.nvm",
+      "npm_package_description": "**Sage** is an open source project and completely free to use.",
+      "npm_package_devDependencies__roots_sage": "5.7.6",
+      "npm_config_python": "/usr/bin/python",
+      "npm_package_license": "MIT",
+      "_system_type": "Darwin",
+      "rvm_path": "/Users/pope/.rvm",
+      "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.cgokRD0zDh/Listeners",
+      "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x8",
+      "npm_execpath": "/usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js",
+      "rvm_prefix": "/Users/pope",
+      "npm_package_devDependencies__roots_bud_postcss": "^5.7.7",
+      "PATH": "/var/folders/04/shr__7wx1cb5lp950jg8g10r0000gn/T/yarn--1651666005811-0.5882034696401697:/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/node_modules/.bin:/Users/pope/.config/yarn/link/node_modules/.bin:/Users/pope/.nvm/versions/node/v16.13.2/libexec/lib/node_modules/npm/bin/node-gyp-bin:/Users/pope/.nvm/versions/node/v16.13.2/lib/node_modules/npm/bin/node-gyp-bin:/Users/pope/.nvm/versions/node/v16.13.2/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/opt/mysql@5.7/bin:/Users/pope/bin:/usr/local/opt/openjdk/bin:/usr/local/opt/python@3.8/bin:/Users/pope/.nvm/versions/node/v16.13.2/bin:/Users/pope/.node/bin:/Users/pope/.npm-packages/bin:-/Users/pope/.node/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/pope/.composer/vendor/bin:/Users/pope/.rvm/bin:/Users/pope/.rvm/bin:/usr/local/bin:/usr/local/bin:/Users/pope/.rvm/bin",
+      "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"build\"],\"original\":[\"build\"]}",
+      "npm_package_dependencies_swiper": "^8.1.0",
+      "_": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme/node_modules/.bin/bud",
+      "NVM_NODEJS_ORG_MIRROR": "https://nodejs.org/dist",
+      "PWD": "/Users/pope/Local Sites/claraumbach/app/public/wp-content/themes/umbachtheme",
+      "npm_lifecycle_event": "build",
+      "LANG": "es_ES.UTF-8",
+      "npm_package_name": "sage",
+      "npm_package_scripts_build": "bud build",
+      "npm_config_version_commit_hooks": "true",
+      "XPC_FLAGS": "0x0",
+      "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "--ms-enable-electron-run-as-node",
+      "_system_arch": "x86_64",
+      "npm_package_devDependencies__roots_bud_sass": "^5.7.7",
+      "npm_config_bin_links": "true",
+      "_system_version": "10.13",
+      "npm_package_dependencies_alpinejs": "^3.9.6",
+      "npm_package_engines_node": ">=16.0.0",
+      "XPC_SERVICE_NAME": "0",
+      "npm_package_version": "",
+      "rvm_version": "1.26.11 (latest)",
+      "HOME": "/Users/pope",
+      "SHLVL": "2",
+      "VSCODE_GIT_ASKPASS_MAIN": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+      "npm_package_devDependencies__roots_bud": "5.7.6",
+      "npm_config_save_prefix": "^",
+      "npm_config_strict_ssl": "true",
+      "npm_config_version_git_message": "v%s",
+      "NPM_CONFIG_PYTHON": "/usr/bin/python",
+      "npm_package_dependencies__alpinejs_collapse": "^3.9.6",
+      "LOGNAME": "popedub",
+      "YARN_WRAP_OUTPUT": "false",
+      "npm_package_browserslist_0": "extends @wordpress/browserslist-config",
+      "PREFIX": "/usr/local",
+      "npm_lifecycle_script": "bud build",
+      "npm_package_scripts_translate_pot": "wp i18n make-pot . ./resources/lang/sage.pot --ignore-domain --include=\"app,resources\"",
+      "VSCODE_GIT_IPC_HANDLE": "/var/folders/04/shr__7wx1cb5lp950jg8g10r0000gn/T/vscode-git-45758f5015.sock",
+      "NVM_BIN": "/Users/pope/.nvm/versions/node/v16.13.2/bin",
+      "NVM_IOJS_ORG_MIRROR": "https://iojs.org/dist",
+      "npm_config_version_git_sign": "",
+      "npm_config_ignore_scripts": "",
+      "npm_config_user_agent": "yarn/1.22.10 npm/? node/v16.13.2 darwin x64",
+      "VSCODE_GIT_ASKPASS_NODE": "/Applications/Visual Studio Code.app/Contents/MacOS/Electron",
+      "GIT_ASKPASS": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+      "npm_config_init_version": "1.0.0",
+      "npm_config_ignore_optional": "",
+      "_system_name": "OSX",
+      "npm_package_devDependencies__roots_bud_tailwindcss": "5.7.6",
+      "COLORTERM": "truecolor",
+      "npm_node_execpath": "/Users/pope/.nvm/versions/node/v16.13.2/bin/node",
+      "npm_config_version_tag_prefix": "v"
+    },
+    "colorDepth": 256,
+    "args": {
+      "debug": false,
+      "indicator": true,
+      "mode": "production",
+      "notify": true,
+      "overlay": true,
+      "verbose": false
+    }
+  },
+  "publicEnv": {},
+  "modules": {
+    "root": {
+      "name": "root",
+      "private": true,
+      "browserslist": [
+        "extends @wordpress/browserslist-config"
+      ],
+      "engines": {
+        "node": ">=16.0.0"
+      },
+      "scripts": {
+        "dev": "bud dev",
+        "build": "bud build",
+        "translate": "npm run translate:pot && npm run translate:js",
+        "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --ignore-domain --include=\"app,resources\"",
+        "translate:js": "wp i18n make-json ./resources/lang --pretty-print"
+      },
+      "devDependencies": {
+        "@roots/bud": "5.7.6",
+        "@roots/bud-postcss": "^5.7.7",
+        "@roots/bud-sass": "^5.7.7",
+        "@roots/bud-tailwindcss": "5.7.6",
+        "@roots/sage": "5.7.6"
+      },
+      "dependencies": {
+        "@alpinejs/collapse": "^3.9.6",
+        "alpinejs": "^3.9.6",
+        "swiper": "^8.1.0"
+      },
+      "version": "0.0.0",
+      "bud": null,
+      "resolvable": true,
+      "requires": [
+        [
+          "@roots/bud",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-postcss",
+          "^5.7.7"
+        ],
+        [
+          "@roots/bud-sass",
+          "^5.7.7"
+        ],
+        [
+          "@roots/bud-tailwindcss",
+          "5.7.6"
+        ],
+        [
+          "@roots/sage",
+          "5.7.6"
+        ],
+        [
+          "@alpinejs/collapse",
+          "^3.9.6"
+        ],
+        [
+          "alpinejs",
+          "^3.9.6"
+        ],
+        [
+          "swiper",
+          "^8.1.0"
+        ]
+      ]
+    },
+    "@roots/bud-postcss": {
+      "name": "@roots/bud-postcss",
+      "version": "5.7.7",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "postcss": "^8.4.5",
+        "postcss-import": "^14.0.2",
+        "postcss-nested": "^5.0.6",
+        "postcss-preset-env": "^7.1.0"
+      },
+      "requires": []
+    },
+    "@roots/bud-tailwindcss": {
+      "name": "@roots/bud-tailwindcss",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-postcss"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "tailwindcss": "^3.0.8"
+      },
+      "requires": [
+        [
+          "@roots/bud-postcss",
+          "5.7.6"
+        ]
+      ]
+    },
+    "@roots/sage": {
+      "name": "@roots/sage",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-preset-wordpress"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": [
+        [
+          "@roots/bud-preset-wordpress",
+          "5.7.6"
+        ]
+      ]
+    },
+    "@roots/bud-sass": {
+      "name": "@roots/bud-sass",
+      "version": "5.7.7",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-postcss"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "postcss-scss": "^4.0.3",
+        "sass": "^1.45.2",
+        "sass-loader": "^12.4.0",
+        "stylelint-config-recommended-scss": "^5.0.2"
+      },
+      "requires": [
+        [
+          "@roots/bud-postcss",
+          "5.7.7"
+        ]
+      ]
+    },
+    "@roots/bud-preset-wordpress": {
+      "name": "@roots/bud-preset-wordpress",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-babel",
+          "@roots/bud-entrypoints",
+          "@roots/bud-postcss",
+          "@roots/bud-preset-recommend",
+          "@roots/bud-react",
+          "@roots/bud-wordpress-externals",
+          "@roots/bud-wordpress-dependencies",
+          "@roots/bud-wordpress-manifests"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "@wordpress/browserslist-config": "^4.1.0"
+      },
+      "requires": [
+        [
+          "@roots/bud-babel",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-entrypoints",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-postcss",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-preset-recommend",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-react",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-wordpress-externals",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-wordpress-dependencies",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-wordpress-manifests",
+          "5.7.6"
+        ]
+      ]
+    },
+    "@roots/bud-babel": {
+      "name": "@roots/bud-babel",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "@babel/core": "^7.16.10",
+        "@babel/plugin-proposal-class-properties": "^7.16.0",
+        "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/plugin-transform-runtime": "^7.16.4",
+        "@babel/preset-env": "^7.16.4",
+        "babel-loader": "^8.2.3",
+        "babel-plugin-add-module-exports": "^1.0.4"
+      },
+      "requires": []
+    },
+    "@roots/bud-entrypoints": {
+      "name": "@roots/bud-entrypoints",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": []
+    },
+    "@roots/bud-preset-recommend": {
+      "name": "@roots/bud-preset-recommend",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-babel",
+          "@roots/bud-entrypoints",
+          "@roots/bud-postcss"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": [
+        [
+          "@roots/bud-babel",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-entrypoints",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-postcss",
+          "5.7.6"
+        ]
+      ]
+    },
+    "@roots/bud-react": {
+      "name": "@roots/bud-react",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-babel"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+      },
+      "requires": [
+        [
+          "@roots/bud-babel",
+          "5.7.6"
+        ]
+      ]
+    },
+    "@roots/bud-wordpress-externals": {
+      "name": "@roots/bud-wordpress-externals",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": []
+    },
+    "@roots/bud-wordpress-dependencies": {
+      "name": "@roots/bud-wordpress-dependencies",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": []
+    },
+    "@roots/bud-wordpress-manifests": {
+      "name": "@roots/bud-wordpress-manifests",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": []
+    }
+  },
+  "adjacents": [
+    {
+      "name": "@roots/bud-wordpress-manifests",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": []
+    },
+    {
+      "name": "@roots/bud-wordpress-dependencies",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": []
+    },
+    {
+      "name": "@roots/bud-wordpress-externals",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": []
+    },
+    {
+      "name": "@roots/bud-react",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-babel"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+      },
+      "requires": [
+        [
+          "@roots/bud-babel",
+          "5.7.6"
+        ]
+      ]
+    },
+    {
+      "name": "@roots/bud-preset-recommend",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-babel",
+          "@roots/bud-entrypoints",
+          "@roots/bud-postcss"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": [
+        [
+          "@roots/bud-babel",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-entrypoints",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-postcss",
+          "5.7.6"
+        ]
+      ]
+    },
+    {
+      "name": "@roots/bud-entrypoints",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": []
+    },
+    {
+      "name": "@roots/bud-babel",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "@babel/core": "^7.16.10",
+        "@babel/plugin-proposal-class-properties": "^7.16.0",
+        "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/plugin-transform-runtime": "^7.16.4",
+        "@babel/preset-env": "^7.16.4",
+        "babel-loader": "^8.2.3",
+        "babel-plugin-add-module-exports": "^1.0.4"
+      },
+      "requires": []
+    },
+    {
+      "name": "@roots/bud-preset-wordpress",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-babel",
+          "@roots/bud-entrypoints",
+          "@roots/bud-postcss",
+          "@roots/bud-preset-recommend",
+          "@roots/bud-react",
+          "@roots/bud-wordpress-externals",
+          "@roots/bud-wordpress-dependencies",
+          "@roots/bud-wordpress-manifests"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "@wordpress/browserslist-config": "^4.1.0"
+      },
+      "requires": [
+        [
+          "@roots/bud-babel",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-entrypoints",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-postcss",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-preset-recommend",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-react",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-wordpress-externals",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-wordpress-dependencies",
+          "5.7.6"
+        ],
+        [
+          "@roots/bud-wordpress-manifests",
+          "5.7.6"
+        ]
+      ]
+    },
+    {
+      "name": "@roots/sage",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-preset-wordpress"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {},
+      "requires": [
+        [
+          "@roots/bud-preset-wordpress",
+          "5.7.6"
+        ]
+      ]
+    },
+    {
+      "name": "@roots/bud-tailwindcss",
+      "version": "5.7.6",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-postcss"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "tailwindcss": "^3.0.8"
+      },
+      "requires": [
+        [
+          "@roots/bud-postcss",
+          "5.7.6"
+        ]
+      ]
+    },
+    {
+      "name": "@roots/bud-sass",
+      "version": "5.7.7",
+      "bud": {
+        "type": "extension",
+        "peers": [
+          "@roots/bud-postcss"
+        ]
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "postcss-scss": "^4.0.3",
+        "sass": "^1.45.2",
+        "sass-loader": "^12.4.0",
+        "stylelint-config-recommended-scss": "^5.0.2"
+      },
+      "requires": [
+        [
+          "@roots/bud-postcss",
+          "5.7.7"
+        ]
+      ]
+    },
+    {
+      "name": "@roots/bud-postcss",
+      "version": "5.7.7",
+      "bud": {
+        "type": "extension"
+      },
+      "resolvable": true,
+      "peerDependencies": {
+        "postcss": "^8.4.5",
+        "postcss-import": "^14.0.2",
+        "postcss-nested": "^5.0.6",
+        "postcss-preset-env": "^7.1.0"
+      },
+      "requires": []
+    }
+  ]
+}
